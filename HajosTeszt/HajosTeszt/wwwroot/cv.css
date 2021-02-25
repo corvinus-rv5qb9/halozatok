@@ -1,0 +1,50 @@
+﻿body
+{color:green;
+}
+div {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    padding: 2px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+a {
+    padding: 2px;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+}
+
+    a:hover {
+        background-color: green;
+    }
+
+
+
+#listak {
+    background-color: lightcyan;
+}
+
+.megisfeher {
+    background-color: white;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.sorrendi {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: auto;
+}

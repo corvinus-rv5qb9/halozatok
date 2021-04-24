@@ -3,24 +3,39 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link href="hajo.css" rel="stylesheet" />
 </head>
 <body>
     <div id="eredmeny"></div>
 
-    <script>
-        fetch('/questions/all')
-            .then(response => response.json())
-            .then(data => console.log(data)
-        );
 
-        function kiiratás(lista) {
-            console.log(lista)
-            for (var i = 0; i < lista.length; i++) {
-                let újElem = document.createElement("div");
-                újElem.innerText = lista[i];
-                document.getElementById("eredmeny").appendChild(újElem);
-            }
-        }
+
+    <div id="külső">
+        <div id="kérdés_szöveg">
+            Kérdés szövege
+        </div>
+
+        <div id="középső">
+            <div id="válaszok">
+                <div id="válasz1" onclick="színezés(1)" class="kerdes kattintható">Válasz 1</div>
+                <div id="válasz2" onclick="színezés(2)" class="kerdes kattintható jó">Válasz 2</div>
+                <div id="válasz3" onclick="színezés(3)" class="kerdes kattintható rossz">Válasz 3</div>
+            </div>
+            <div id="kép">
+                <img id="kép1" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
+            </div>
+        </div>
+        <div id="vezérlő">
+            <div id="vissza" onclick="vissza()" class="gomb kattintható">Vissza</div>
+            <div id="előre" onclick="előre()" class="gomb kattintható">Előre</div>
+        </div>
+    </div>
+    <script src="/hetedik.js">
+
+        
+
     </script>
+
+    
 </body>
 </html>

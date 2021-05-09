@@ -49,21 +49,19 @@ div {
     
 }
 
-.kerdes {
-}
 
 .kattintható {
     border: 2px solid black;
     border-radius: 8px;
 }
 
-.kattintható:hover {
-    background-color: dimgrey;
-    color: white;
-}
 
 .jó {
+    background-color: forestgreen;
+    color:white;
 }
 
 .rossz {
+    background-color: red;
+    color:white;
 }
